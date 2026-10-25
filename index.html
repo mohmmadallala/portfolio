@@ -3,52 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mohammad Allala | Cybersecurity Graduate</title>
-
-    <meta name="description"
-          content="Mohammad Allala - Cybersecurity Graduate, SOC Analyst Trainee, C# Developer and Blue Team learner.">
-
+    <meta name="description" content="Mohammad Allala - Cybersecurity Graduate, SOC Analyst Trainee, C# Developer and Blue Team learner.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             font-family: 'Cairo', sans-serif;
             background: #0b0f14;
             color: #e6edf3;
             line-height: 1.7;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
-
         .container {
             width: 90%;
             max-width: 1150px;
             margin: auto;
         }
-
-        /* =========================
-           NAVBAR
-        ========================= */
-
+        /* NAVBAR */
         nav {
             position: sticky;
             top: 0;
@@ -57,40 +41,42 @@
             border-bottom: 1px solid #1d2733;
             backdrop-filter: blur(10px);
         }
-
         .nav-container {
             min-height: 70px;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-
         .logo {
             font-size: 22px;
             font-weight: 800;
             color: #00ff88;
         }
-
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 20px;
             list-style: none;
+            align-items: center;
         }
-
         .nav-links a {
             color: #aeb9c6;
             font-size: 14px;
             transition: 0.3s;
         }
-
         .nav-links a:hover {
             color: #00ff88;
         }
-
-        /* =========================
-           HERO
-        ========================= */
-
+        .lang-switch {
+            background: #171f28;
+            border: 1px solid #26323e;
+            color: #00ff88;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        /* HERO */
         .hero {
             min-height: 90vh;
             display: flex;
@@ -98,7 +84,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .hero::before {
             content: "";
             position: absolute;
@@ -110,13 +95,11 @@
             top: 50px;
             right: -100px;
         }
-
         .hero-content {
             position: relative;
             z-index: 2;
             max-width: 850px;
         }
-
         .badge {
             display: inline-block;
             padding: 7px 15px;
@@ -127,37 +110,31 @@
             margin-bottom: 20px;
             background: rgba(0, 255, 136, 0.05);
         }
-
         .hero h1 {
             font-size: clamp(42px, 7vw, 78px);
             line-height: 1.1;
             margin-bottom: 15px;
         }
-
         .hero h1 span {
             color: #00ff88;
         }
-
         .hero h2 {
             color: #aeb9c6;
             font-size: clamp(20px, 3vw, 30px);
             font-weight: 500;
             margin-bottom: 25px;
         }
-
         .hero p {
             color: #9ba7b4;
             font-size: 17px;
             max-width: 780px;
             margin-bottom: 30px;
         }
-
         .hero-buttons {
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
-
         .btn {
             display: inline-block;
             padding: 11px 22px;
@@ -166,57 +143,41 @@
             font-weight: 700;
             transition: 0.3s;
         }
-
         .btn-primary {
             background: #00ff88;
             color: #06120c;
         }
-
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(0, 255, 136, 0.2);
         }
-
         .btn-secondary {
             border: 1px solid #2b3947;
             color: #d8e0e8;
         }
-
         .btn-secondary:hover {
             border-color: #00ff88;
             color: #00ff88;
         }
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
+        /* SECTIONS */
         section {
             padding: 90px 0;
         }
-
         .section-title {
             text-align: center;
             margin-bottom: 55px;
         }
-
         .section-title h2 {
             font-size: 35px;
             margin-bottom: 10px;
         }
-
         .section-title span {
             color: #00ff88;
         }
-
         .section-title p {
             color: #8e9aa7;
         }
-
-        /* =========================
-           ABOUT
-        ========================= */
-
+        /* ABOUT & CARDS */
         .about-text {
             max-width: 850px;
             margin: auto;
@@ -224,14 +185,12 @@
             color: #aeb9c6;
             font-size: 16px;
         }
-
         .cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-top: 40px;
         }
-
         .card {
             background: #10161d;
             border: 1px solid #1d2733;
@@ -239,236 +198,25 @@
             border-radius: 12px;
             transition: 0.3s;
         }
-
         .card:hover {
             transform: translateY(-5px);
             border-color: #245b43;
         }
-
         .card h3 {
             margin-bottom: 12px;
             color: #00ff88;
             font-size: 20px;
         }
-
         .card p {
             color: #98a4b1;
             font-size: 14px;
         }
-
-        /* =========================
-           SOC
-        ========================= */
-
-        .soc-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .soc-card {
-            background: #10161d;
-            border: 1px solid #1d2733;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        .soc-card h3 {
-            color: #00ff88;
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        .soc-card p {
-            color: #9ba7b4;
-            font-size: 14px;
-        }
-
-        .status {
-            display: inline-block;
-            margin-top: 15px;
-            font-size: 12px;
-            padding: 4px 9px;
-            border-radius: 15px;
-            border: 1px solid #276644;
-            color: #00ff88;
-        }
-
-        /* =========================
-           SKILLS
-        ========================= */
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .skill-box {
-            background: #10161d;
-            border: 1px solid #1d2733;
-            border-radius: 10px;
-            padding: 25px;
-        }
-
-        .skill-box h3 {
-            color: #00ff88;
-            margin-bottom: 15px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .skill {
-            background: #171f28;
-            border: 1px solid #26323e;
-            padding: 5px 10px;
-            border-radius: 5px;
-            color: #b7c1cc;
-            font-size: 12px;
-        }
-
-        /* =========================
-           PROJECTS
-        ========================= */
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
-
-        .project {
-            background: #10161d;
-            border: 1px solid #1d2733;
-            border-radius: 12px;
-            padding: 30px;
-            transition: 0.3s;
-        }
-
-        .project:hover {
-            border-color: #245b43;
-            transform: translateY(-4px);
-        }
-
-        .project h3 {
-            color: #00ff88;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            color: #9ba7b4;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .project-tag {
-            font-size: 11px;
-            color: #b8c3ce;
-            background: #171f28;
-            padding: 4px 9px;
-            border-radius: 4px;
-        }
-
-        /* =========================
-           PROGRAMMING ADVICES
-        ========================= */
-
-        .roadmap-box {
-            max-width: 900px;
-            margin: auto;
-            background: #10161d;
-            border: 1px solid #1d2733;
-            border-radius: 12px;
-            padding: 35px;
-            text-align: center;
-        }
-
-        .roadmap-box h3 {
-            font-size: 25px;
-            color: #00ff88;
-            margin-bottom: 10px;
-        }
-
-        .roadmap-box .course-number {
-            display: inline-block;
-            margin: 15px 0;
-            padding: 8px 15px;
-            border-radius: 20px;
-            border: 1px solid #276644;
-            color: #00ff88;
-            font-size: 13px;
-        }
-
-        .roadmap-box p {
-            color: #9ba7b4;
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-
-        .roadmap-link {
-            display: inline-block;
-            color: #00ff88;
-            border: 1px solid #276644;
-            padding: 9px 18px;
-            border-radius: 6px;
-            font-size: 13px;
-            transition: 0.3s;
-        }
-
-        .roadmap-link:hover {
-            background: #00ff88;
-            color: #07130d;
-        }
-
-        /* =========================
-           WORKFLOW
-        ========================= */
-
-        .workflow {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .workflow-step {
-            background: #10161d;
-            border: 1px solid #1d2733;
-            padding: 14px 18px;
-            border-radius: 7px;
-            color: #b8c3ce;
-            font-size: 13px;
-        }
-
-        .workflow-arrow {
-            color: #00ff88;
-            font-weight: bold;
-        }
-
-        /* =========================
-           CERTIFICATES
-        ========================= */
-
+        /* CERTIFICATES SECTION */
         .certificates-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
-            max-width: 950px;
-            margin: auto;
         }
-
         .certificate-card {
             background: #10161d;
             border: 1px solid #1d2733;
@@ -476,46 +224,26 @@
             padding: 30px;
             transition: 0.3s;
         }
-
         .certificate-card:hover {
             border-color: #245b43;
             transform: translateY(-4px);
         }
-
         .certificate-card h3 {
             color: #00ff88;
-            font-size: 21px;
+            font-size: 22px;
             margin-bottom: 8px;
         }
-
         .certificate-card .issuer {
             color: #d8e0e8;
             font-size: 14px;
             margin-bottom: 12px;
+            font-weight: 600;
         }
-
         .certificate-card p {
             color: #9ba7b4;
             font-size: 14px;
             margin-bottom: 18px;
         }
-
-        .certificate-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 18px;
-        }
-
-        .certificate-meta span {
-            font-size: 11px;
-            color: #b8c3ce;
-            background: #171f28;
-            border: 1px solid #26323e;
-            padding: 4px 9px;
-            border-radius: 4px;
-        }
-
         .certificate-link {
             display: inline-block;
             color: #00ff88;
@@ -523,105 +251,13 @@
             padding: 8px 15px;
             border-radius: 6px;
             font-size: 12px;
+            transition: 0.3s;
         }
-
         .certificate-link:hover {
             background: #00ff88;
             color: #07130d;
         }
-
-        /* =========================
-           JOURNEY
-        ========================= */
-
-        .timeline {
-            max-width: 850px;
-            margin: auto;
-            border-left: 2px solid #1f704b;
-            padding-left: 30px;
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 35px;
-        }
-
-        .timeline-item::before {
-            content: "";
-            position: absolute;
-            left: -39px;
-            top: 7px;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background: #00ff88;
-            box-shadow: 0 0 0 5px #0b0f14;
-        }
-
-        .timeline-item h3 {
-            color: #00ff88;
-            margin-bottom: 4px;
-        }
-
-        .timeline-item span {
-            color: #6f7d8b;
-            font-size: 12px;
-        }
-
-        .timeline-item p {
-            color: #9ba7b4;
-            font-size: 14px;
-            margin-top: 8px;
-        }
-
-        .timeline-item a {
-            color: #00ff88;
-        }
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact-box {
-            max-width: 750px;
-            margin: auto;
-            text-align: center;
-            background: #10161d;
-            border: 1px solid #1d2733;
-            padding: 40px;
-            border-radius: 12px;
-        }
-
-        .contact-box p {
-            color: #9ba7b4;
-            margin-bottom: 25px;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .contact-link {
-            border: 1px solid #273440;
-            padding: 9px 16px;
-            border-radius: 6px;
-            color: #b9c4cf;
-            font-size: 13px;
-            transition: 0.3s;
-        }
-
-        .contact-link:hover {
-            border-color: #00ff88;
-            color: #00ff88;
-        }
-
-        /* =========================
-           FOOTER
-        ========================= */
-
+        /* FOOTER */
         footer {
             border-top: 1px solid #1d2733;
             padding: 25px 0;
@@ -629,1187 +265,220 @@
             color: #667482;
             font-size: 12px;
         }
-
-        /* =========================
-           RESPONSIVE
-        ========================= */
-
         @media (max-width: 900px) {
-
-            .cards,
-            .skills-grid,
-            .certificates-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .soc-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-        }
-
-        @media (max-width: 650px) {
-
-            .nav-container {
-                flex-direction: column;
-                padding: 15px 0;
-                gap: 10px;
-            }
-
-            .nav-links {
-                gap: 13px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero {
-                min-height: 80vh;
-            }
-
-            .cards,
-            .skills-grid,
-            .soc-grid,
-            .projects,
-            .certificates-grid {
+            .cards, .certificates-grid {
                 grid-template-columns: 1fr;
             }
-
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .hero h2 {
-                font-size: 20px;
-            }
-
-            .workflow-arrow {
-                display: none;
-            }
-
-            .timeline {
-                padding-left: 22px;
-            }
-
-            .timeline-item::before {
-                left: -31px;
-            }
-
         }
-
     </style>
 </head>
+<body id="body">
 
-<body>
-
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
-
+    <!-- NAVIGATION -->
     <nav>
         <div class="container nav-container">
-
-            <div class="logo">
-                Mohammad Allala
-            </div>
-
+            <div class="logo">Mohammad Allala</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#soc">SOC</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-about">About</a></li>
+                <li><a href="#certificates" class="nav-certs">Certificates</a></li>
+                <li><a href="#contact" class="nav-contact">Contact</a></li>
+                <li><button class="lang-switch" onclick="toggleLanguage()">AR / EN</button></li>
             </ul>
-
         </div>
     </nav>
 
-
-    <!-- =========================
-         HERO
-    ========================= -->
-
+    <!-- HERO -->
     <header class="hero">
-
         <div class="container">
-
             <div class="hero-content">
-
-                <span class="badge">
-                    Cybersecurity Graduate • SOC Analyst Track
-                </span>
-
-                <h1>
-                    Mohammad <span>Allala</span>
-                </h1>
-
-                <h2>
-                    Cybersecurity Graduate | SOC Analyst Trainee
-                </h2>
-
-                <p>
-                    خريج أمن سيبراني مهتم بمجال
-                    <strong>SOC Analysis</strong>
-                    والـ Blue Team.
-
-                    أعمل حاليًا على منصة
-                    <strong>LetsDefend</strong>
-                    وأدرس شهادة
-                    <strong>Blue Team Level 1 (BTL1)</strong>.
-
-                    كما أتابع خارطة الطريق البرمجية مع
-                    <strong>Mohammad Abu-Hadhoud</strong>
-                    على منصة
-                    <strong>Programming Advices</strong>
-                    وقد وصلت إلى الكورس رقم 20.
+                <span class="badge hero-badge">Cybersecurity Graduate • SOC Analyst Track</span>
+                <h1 class="hero-title">Mohammad <span>Allala</span></h1>
+                <h2 class="hero-subtitle">Cybersecurity Graduate | SOC Analyst Trainee</h2>
+                <p class="hero-desc">
+                    خريج أمن سيبراني مهتم بمجال <strong>SOC Analysis</strong> والـ Blue Team. أعمل حاليًا على منصة <strong>LetsDefend</strong> وأدرس شهادة <strong>Blue Team Level 1 (BTL1)</strong>.
                 </p>
-
                 <div class="hero-buttons">
-
-                    <a href="#projects" class="btn btn-primary">
-                        View Projects
-                    </a>
-
-                    <a href="#contact" class="btn btn-secondary">
-                        Contact Me
-                    </a>
-
+                    <a href="#certificates" class="btn btn-primary btn-certs">View Certificates</a>
+                    <a href="#contact" class="btn btn-secondary btn-touch">Contact Me</a>
                 </div>
-
             </div>
-
         </div>
-
     </header>
 
-
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
+    <!-- ABOUT -->
     <section id="about">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>
-                    About <span>Me</span>
-                </h2>
-
-                <p>
-                    My current direction and technical background
-                </p>
-
+                <h2 class="about-heading">About <span>Me</span></h2>
+                <p class="about-sub">My current direction and technical background</p>
             </div>
-
-
-            <p class="about-text">
-
-                أنا خريج أمن سيبراني، لدي اهتمام خاص بمجال
-                SOC Analysis وBlue Team.
-
-                إلى جانب الأمن السيبراني، لدي أساس جيد في البرمجة
-                وتطوير تطبيقات سطح المكتب باستخدام C# و.NET
-                وقواعد البيانات SQL Server.
-
-                أركز حاليًا على تطوير مهارات التحليل والتحقيق
-                في الحوادث الأمنية من خلال التدريب العملي.
-
+            <p class="about-text about-body">
+                أنا خريج أمن سيبراني، لدي اهتمام خاص بمجال SOC Analysis وBlue Team. إلى جانب الأمن السيبراني، لدي أساس جيد في البرمجة وتطوير تطبيقات سطح المكتب باستخدام C# و.NET وقواعد البيانات SQL Server.
             </p>
-
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <h3>
-                        Cybersecurity
-                    </h3>
-
-                    <p>
-                        أساس في مفاهيم الأمن السيبراني، تحليل السجلات،
-                        IOC, TTP, MITRE ATT&CK، Phishing Analysis
-                        وIncident Response.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>
-                        Software Development
-                    </h3>
-
-                    <p>
-                        خبرة عملية في C# و.NET Framework وWindows Forms
-                        وADO.NET وSQL Server وتصميم التطبيقات متعددة الطبقات.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>
-                        Current Focus
-                    </h3>
-
-                    <p>
-                        أعمل حاليًا على LetsDefend وأدرس BTL1،
-                        بالتوازي مع الاستمرار في خارطة Programming Advices.
-                    </p>
-
-                </div>
-
-            </div>
-
         </div>
-
     </section>
 
-
-    <!-- =========================
-         SOC
-    ========================= -->
-
-    <section id="soc">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>
-                    SOC <span>Training</span>
-                </h2>
-
-                <p>
-                    My current cybersecurity learning path
-                </p>
-
-            </div>
-
-
-            <div class="soc-grid">
-
-                <div class="soc-card">
-
-                    <h3>
-                        LetsDefend
-                    </h3>
-
-                    <p>
-                        تدريب عملي على بيئة SOC من خلال
-                        تحليل التنبيهات والتحقيق في الحوادث
-                        وفهم آلية عمل Security Operations Center.
-                    </p>
-
-                    <span class="status">
-                        Currently Training
-                    </span>
-
-                </div>
-
-
-                <div class="soc-card">
-
-                    <h3>
-                        BTL1
-                    </h3>
-
-                    <p>
-                        أدرس حاليًا شهادة
-                        Blue Team Level 1
-                        مع التركيز على المهارات العملية
-                        في الدفاع والتحليل والاستجابة للحوادث.
-                    </p>
-
-                    <span class="status">
-                        Currently Studying
-                    </span>
-
-                </div>
-
-
-                <div class="soc-card">
-
-                    <h3>
-                        Alert Analysis
-                    </h3>
-
-                    <p>
-                        تدريب على فهم Security Alerts،
-                        التحقق من الـ Evidence،
-                        تحليل الأحداث وربطها بالسياق الأمني.
-                    </p>
-
-                </div>
-
-
-                <div class="soc-card">
-
-                    <h3>
-                        Incident Response
-                    </h3>
-
-                    <p>
-                        دراسة خطوات التحقيق في الحوادث،
-                        التوثيق، تحديد الـ IOC والـ TTP
-                        والتصعيد عند الحاجة.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================= -->
-
-    <section id="skills">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>
-                    Technical <span>Skills</span>
-                </h2>
-
-                <p>
-                    Technologies and concepts I have worked with
-                </p>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-
-                <div class="skill-box">
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <div class="skills">
-
-                        <span class="skill">C#</span>
-                        <span class="skill">C++</span>
-                        <span class="skill">SQL</span>
-                        <span class="skill">HTML</span>
-                        <span class="skill">CSS</span>
-                        <span class="skill">JavaScript</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-box">
-
-                    <h3>
-                        .NET Development
-                    </h3>
-
-                    <div class="skills">
-
-                        <span class="skill">C#</span>
-                        <span class="skill">.NET Framework</span>
-                        <span class="skill">Windows Forms</span>
-                        <span class="skill">ADO.NET</span>
-                        <span class="skill">Data Layer</span>
-                        <span class="skill">Business Layer</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-box">
-
-                    <h3>
-                        Databases
-                    </h3>
-
-                    <div class="skills">
-
-                        <span class="skill">SQL Server</span>
-                        <span class="skill">SQL Queries</span>
-                        <span class="skill">T-SQL</span>
-                        <span class="skill">Database Design</span>
-                        <span class="skill">Stored Procedures</span>
-                        <span class="skill">ADO.NET</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-box">
-
-                    <h3>
-                        Cybersecurity
-                    </h3>
-
-                    <div class="skills">
-
-                        <span class="skill">SOC Fundamentals</span>
-                        <span class="skill">SIEM Concepts</span>
-                        <span class="skill">Phishing Analysis</span>
-                        <span class="skill">Incident Response</span>
-                        <span class="skill">Threat Intelligence</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-box">
-
-                    <h3>
-                        Security Concepts
-                    </h3>
-
-                    <div class="skills">
-
-                        <span class="skill">MITRE ATT&CK</span>
-                        <span class="skill">IOC</span>
-                        <span class="skill">TTP</span>
-                        <span class="skill">Log Analysis</span>
-                        <span class="skill">Security Monitoring</span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="skill-box">
-
-                    <h3>
-                        Operating Systems
-                    </h3>
-
-                    <div class="skills">
-
-                        <span class="skill">Windows</span>
-                        <span class="skill">Linux</span>
-                        <span class="skill">Kali Linux</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================= -->
-
-    <section id="projects">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>
-                    My <span>Projects</span>
-                </h2>
-
-                <p>
-                    Projects and practical learning
-                </p>
-
-            </div>
-
-
-            <div class="projects">
-
-
-                <!-- HIDS -->
-
-                <div class="project">
-
-                    <h3>
-                        HIDS Lite
-                    </h3>
-
-                    <p>
-
-                        نظام Host-Based Intrusion Detection System
-                        تم تطويره كمشروع تخرج.
-
-                        النظام يعمل محليًا على Windows ويقوم
-                        بمراقبة مجموعة من الأحداث الأمنية
-                        وربط الأحداث وتحليلها وتوليد Incidents
-                        بناءً على Rules محددة.
-
-                        تم تطوير المشروع باستخدام C# و.NET Framework
-                        مع ETW وSQL Server.
-
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span class="project-tag">
-                            C#
-                        </span>
-
-                        <span class="project-tag">
-                            .NET Framework
-                        </span>
-
-                        <span class="project-tag">
-                            ETW
-                        </span>
-
-                        <span class="project-tag">
-                            SQL Server
-                        </span>
-
-                        <span class="project-tag">
-                            Windows
-                        </span>
-
-                        <span class="project-tag">
-                            HIDS
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- DVLD -->
-
-                <div class="project">
-
-                    <h3>
-                        DVLD Management System
-                    </h3>
-
-                    <p>
-
-                        نظام متكامل لإدارة رخص القيادة والمستخدمين
-                        والطلبات والاختبارات والرخص الدولية
-                        والحجز والمخالفات.
-
-                        تم تطويره باستخدام C# وWindows Forms
-                        وSQL Server وADO.NET مع تطبيق
-                        Data Layer وBusiness Layer.
-
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span class="project-tag">
-                            C#
-                        </span>
-
-                        <span class="project-tag">
-                            Windows Forms
-                        </span>
-
-                        <span class="project-tag">
-                            SQL Server
-                        </span>
-
-                        <span class="project-tag">
-                            ADO.NET
-                        </span>
-
-                        <span class="project-tag">
-                            OOP
-                        </span>
-
-                        <span class="project-tag">
-                            Multi-Layer Architecture
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- LetsDefend -->
-
-                <div class="project">
-
-                    <h3>
-                        LetsDefend SOC Training
-                    </h3>
-
-                    <p>
-
-                        تدريب عملي مستمر على منصة LetsDefend
-                        بهدف تطوير مهارات SOC Analysis.
-
-                        يشمل التدريب تحليل التنبيهات،
-                        التحقيق في الأحداث، تحليل الـ Logs،
-                        فهم الـ IOC والـ TTP وكتابة التقارير
-                        الأمنية.
-
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span class="project-tag">
-                            SOC
-                        </span>
-
-                        <span class="project-tag">
-                            Alert Analysis
-                        </span>
-
-                        <span class="project-tag">
-                            Log Analysis
-                        </span>
-
-                        <span class="project-tag">
-                            IOC
-                        </span>
-
-                        <span class="project-tag">
-                            Incident Response
-                        </span>
-
-                    </div>
-
-                    <br>
-
-                    <span class="status">
-                        Current Training
-                    </span>
-
-                </div>
-
-
-                <!-- BTL1 -->
-
-                <div class="project">
-
-                    <h3>
-                        Blue Team Level 1
-                    </h3>
-
-                    <p>
-
-                        أدرس حاليًا شهادة BTL1
-                        لتطوير المهارات العملية في
-                        الدفاع السيبراني.
-
-                        أركز على Security Fundamentals،
-                        Phishing Analysis، Threat Intelligence،
-                        Digital Forensics، SIEM وIncident Response.
-
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span class="project-tag">
-                            BTL1
-                        </span>
-
-                        <span class="project-tag">
-                            Blue Team
-                        </span>
-
-                        <span class="project-tag">
-                            SIEM
-                        </span>
-
-                        <span class="project-tag">
-                            Digital Forensics
-                        </span>
-
-                        <span class="project-tag">
-                            Phishing Analysis
-                        </span>
-
-                    </div>
-
-                    <br>
-
-                    <span class="status">
-                        Currently Studying
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CERTIFICATES
-    ========================= -->
-
+    <!-- CERTIFICATES SECTION -->
     <section id="certificates">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>
-                    My <span>Certificates</span>
-                </h2>
-
-                <p>
-                    Professional training and cybersecurity certifications
-                </p>
-
+                <h2 class="certs-heading">My <span>Certificates</span></h2>
+                <p class="certs-sub">Official certificates and specialized training courses</p>
             </div>
 
             <div class="certificates-grid">
-
+                <!-- NCSC Masar Certificate -->
                 <div class="certificate-card">
-
-                    <h3>Cybersecurity Training Program</h3>
-
-                    <div class="issuer">
-                        National Cyber Security Center (NCSC) – Jordan
-                    </div>
-
-                    <p>
-                        Completed a practical cybersecurity training program
-                        focused on developing foundational and practical skills
-                        in cybersecurity and security operations.
-                    </p>
-
-                    <div class="certificate-meta">
-                        <span>Cybersecurity</span>
-                        <span>Practical Training</span>
-                        <span>200 Hours</span>
-                    </div>
-
-                    <a href="./NCSC-Masar-Training-Certificate-2026.pdf"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="certificate-link">
-                        View Certificate
-                    </a>
-
+                    <h3 class="cert-1-title">NCSC Masar Training Certificate</h3>
+                    <div class="issuer">National Cyber Security Center (NCSC) • 2026</div>
+                    <p class="cert-1-desc">شهادة تدريبية معتمدة في إطار برامج مسار للأمن السيبراني، تغطي أطر إدارة المخاطر والممارسات الأمنية المتقدمة.</p>
+                    <a href="NCSC-Masar-Training-Certificate-2026.pdf" target="_blank" class="certificate-link cert-btn">View Certificate (PDF)</a>
                 </div>
 
+                <!-- Programming Advices Certificates -->
+                <div class="certificate-card">
+                    <h3 class="cert-2-title">Programming Advices Certificates</h3>
+                    <div class="issuer">Programming Advices Platform • Mohammad Abu-Hadhoud</div>
+                    <p class="cert-2-desc">مجموعة متكاملة من الشهادات في مسارات البرمجة المتقدمة تشمل: C# & OOP, ADO.NET, SQL Database, Data Structures & Algorithms.</p>
+                    <a href="certificates/" target="_blank" class="certificate-link cert-btn">View Certificates Folder</a>
+                </div>
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- =========================
-         PROGRAMMING ADVICES
-    ========================= -->
-
-    <section id="programming">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>
-                    Programming <span>Advices</span>
-                </h2>
-
-                <p>
-                    Programming journey with Dr. Mohammed Abu-Hadhoud
-                </p>
-
-            </div>
-
-
-            <div class="roadmap-box">
-
-                <h3>
-                    Programming Advices Roadmap
-                </h3>
-
-                <span class="course-number">
-                    Currently at Course 20
-                </span>
-
-                <p>
-
-                    أتابع خارطة الطريق البرمجية الخاصة
-                    بالدكتور محمد أبو هدهود على منصة
-                    Programming Advices.
-
-                    وصلت حاليًا إلى الكورس رقم 20،
-                    والذي يركز على
-                    <strong>C# Programming Level 2</strong>.
-
-                    خلال المسار عملت على مفاهيم البرمجة،
-                    Problem Solving، C++، OOP، Data Structures،
-                    C#، SQL، ADO.NET وقمت ببناء مشروع
-                    DVLD كجزء من المسار.
-
-                </p>
-
-
-                <!-- Official Programming Advices Courses -->
-
-                <a
-                    href="https://www.programmingadvices.com/courses/author/1463613"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="roadmap-link"
-                >
-                    View Programming Advices Courses
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SOC WORKFLOW
-    ========================= -->
-
-    <section>
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>
-                    SOC <span>Workflow</span>
-                </h2>
-
-                <p>
-                    Basic approach to handling security alerts
-                </p>
-
-            </div>
-
-
-            <div class="workflow">
-
-                <div class="workflow-step">
-                    Alert
-                </div>
-
-                <div class="workflow-arrow">
-                    →
-                </div>
-
-                <div class="workflow-step">
-                    Validate
-                </div>
-
-                <div class="workflow-arrow">
-                    →
-                </div>
-
-                <div class="workflow-step">
-                    Investigate
-                </div>
-
-                <div class="workflow-arrow">
-                    →
-                </div>
-
-                <div class="workflow-step">
-                    Correlate
-                </div>
-
-                <div class="workflow-arrow">
-                    →
-                </div>
-
-                <div class="workflow-step">
-                    Document
-                </div>
-
-                <div class="workflow-arrow">
-                    →
-                </div>
-
-                <div class="workflow-step">
-                    Escalate
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         JOURNEY
-    ========================= -->
-
-    <section id="journey">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>
-                    My <span>Journey</span>
-                </h2>
-
-                <p>
-                    Current learning and development path
-                </p>
-
-            </div>
-
-
-            <div class="timeline">
-
-
-                <div class="timeline-item">
-
-                    <h3>
-                        Cybersecurity Graduate
-                    </h3>
-
-                    <span>
-                        Al al-Bayt University
-                    </span>
-
-                    <p>
-                        Graduated with a degree in Cybersecurity
-                        and completed a practical graduation project.
-                    </p>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <h3>
-                        HIDS Lite
-                    </h3>
-
-                    <span>
-                        Graduation Project
-                    </span>
-
-                    <p>
-                        Designed and developed a local Windows-based
-                        Host-Based Intrusion Detection System using
-                        C#, ETW and SQL Server.
-                    </p>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <h3>
-                        Programming Advices Roadmap
-                    </h3>
-
-                    <span>
-                        Dr. Mohammed Abu-Hadhoud • Course 20
-                    </span>
-
-                    <p>
-
-                        أتابع خارطة الطريق البرمجية بشكل متسلسل،
-                        وقد وصلت حاليًا إلى الكورس رقم 20.
-
-                        يمكن الاطلاع على قائمة الكورسات من الموقع الرسمي:
-
-                        <br><br>
-
-                        <a
-                            href="https://www.programmingadvices.com/courses/author/1463613"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Programming Advices Courses →
-                        </a>
-
-                    </p>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <h3>
-                        SOC Analyst Training
-                    </h3>
-
-                    <span>
-                        LetsDefend • Current
-                    </span>
-
-                    <p>
-                        Currently practicing SOC analysis,
-                        alert investigation, log analysis,
-                        IOC identification and incident investigation
-                        through LetsDefend.
-                    </p>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <h3>
-                        Blue Team Level 1
-                    </h3>
-
-                    <span>
-                        BTL1 • Currently Studying
-                    </span>
-
-                    <p>
-                        Studying BTL1 to strengthen practical
-                        Blue Team skills across security fundamentals,
-                        phishing analysis, threat intelligence,
-                        digital forensics, SIEM and incident response.
-                    </p>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <h3>
-                        SOC Analyst Track
-                    </h3>
-
-                    <span>
-                        Current Career Direction
-                    </span>
-
-                    <p>
-                        Building practical skills toward an
-                        entry-level SOC Analyst / Blue Team role.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
+    <!-- CONTACT -->
     <section id="contact">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>
-                    Contact <span>Me</span>
-                </h2>
-
-                <p>
-                    Feel free to connect with me
-                </p>
-
+                <h2 class="contact-heading">Get In <span>Touch</span></h2>
+                <p class="contact-sub">Feel free to reach out for opportunities</p>
             </div>
-
-
-            <div class="contact-box">
-
-                <p>
-                    مهتم بفرص التدريب والعمل في مجال
-                    SOC Analysis وBlue Team،
-                    بالإضافة إلى فرص تطوير البرمجيات باستخدام C#.
-                </p>
-
-
-                <div class="contact-links">
-
-                    <!-- Replace with your real LinkedIn URL -->
-
-                    <a
-                        href="https://www.linkedin.com/in/mohmmad-al-lala-6a6545416/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-link"
-                    >
-                        LinkedIn
-                    </a>
-
-
-                    <!-- Replace with your real GitHub URL -->
-
-                    <a
-                        href="https://github.com/mohmmadallala"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-link"
-                    >
-                        GitHub
-                    </a>
-
-
-                    <a
-                        href="mohmmadnallala@gmail.com"
-                        class="contact-link"
-                    >
-                        Email
-                    </a>
-
-
-                    <!-- Programming Advices -->
-
-                    <a
-                        href="https://www.programmingadvices.com/courses/author/1463613"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-link"
-                    >
-                        Programming Advices
-                    </a>
-
+            <div class="contact-box" style="max-width: 750px; margin: auto; text-align: center; background: #10161d; border: 1px solid #1d2733; padding: 40px; border-radius: 12px;">
+                <p class="contact-desc" style="color: #9ba7b4; margin-bottom: 25px;">أبحث حالياً عن فرصة تدريب أو عمل في مجال الأمن السيبراني (SOC Analyst) أو تطوير البرمجيات (.NET Developer).</p>
+                <div class="contact-links" style="display: flex; justify-content: center; gap: 12px;">
+                    <a href="mailto:mohmmadnallala@gmail.com" class="contact-link">Email Me</a>
+                    <a href="https://github.com/mohmmadallala" target="_blank" class="contact-link">GitHub</a>
+                    <a href="https://linkedin.com/in/mohmmad-al-lala-6a6545416" target="_blank" class="contact-link">LinkedIn</a>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- =========================
-         FOOTER
-    ========================= -->
-
+    <!-- FOOTER -->
     <footer>
-
         <div class="container">
-
-            © 2026 Mohammad Allala.
-            Cybersecurity Graduate & SOC Analyst Trainee.
-
+            <p>&copy; 2026 Mohammad Allala. All Rights Reserved.</p>
         </div>
-
     </footer>
 
+    <!-- LANGUAGE TOGGLE SCRIPT -->
+    <script>
+        let currentLang = 'ar';
+
+        function toggleLanguage() {
+            const body = document.getElementById('body');
+            const navAbout = document.querySelector('.nav-about');
+            const navCerts = document.querySelector('.nav-certs');
+            const navContact = document.querySelector('.nav-contact');
+            const heroBadge = document.querySelector('.hero-badge');
+            const heroTitle = document.querySelector('.hero-title');
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            const heroDesc = document.querySelector('.hero-desc');
+            const btnCerts = document.querySelector('.btn-certs');
+            const btnTouch = document.querySelector('.btn-touch');
+            const aboutHeading = document.querySelector('.about-heading');
+            const aboutSub = document.querySelector('.about-sub');
+            const aboutBody = document.querySelector('.about-body');
+            const certsHeading = document.querySelector('.certs-heading');
+            const certsSub = document.querySelector('.certs-sub');
+            const cert1Title = document.querySelector('.cert-1-title');
+            const cert1Desc = document.querySelector('.cert-1-desc');
+            const cert2Title = document.querySelector('.cert-2-title');
+            const cert2Desc = document.querySelector('.cert-2-desc');
+            const certBtns = document.querySelectorAll('.cert-btn');
+            const contactHeading = document.querySelector('.contact-heading');
+            const contactSub = document.querySelector('.contact-sub');
+            const contactDesc = document.querySelector('.contact-desc');
+
+            if (currentLang === 'ar') {
+                // Switch to English
+                body.setAttribute('dir', 'ltr');
+                currentLang = 'en';
+
+                navAbout.textContent = 'About';
+                navCerts.textContent = 'Certificates';
+                navContact.textContent = 'Contact';
+
+                heroBadge.textContent = 'Cybersecurity Graduate • SOC Analyst Track';
+                heroTitle.innerHTML = 'Mohammad <span>Allala</span>';
+                heroSubtitle.textContent = 'Cybersecurity Graduate | SOC Analyst Trainee';
+                heroDesc.innerHTML = 'Cybersecurity graduate passionate about <strong>SOC Analysis</strong> and Blue Team. Currently training on <strong>LetsDefend</strong> and studying for <strong>Blue Team Level 1 (BTL1)</strong>.';
+                
+                btnCerts.textContent = 'View Certificates';
+                btnTouch.textContent = 'Contact Me';
+
+                aboutHeading.innerHTML = 'About <span>Me</span>';
+                aboutSub.textContent = 'My current direction and technical background';
+                aboutBody.textContent = 'I am a cybersecurity graduate with a special interest in SOC Analysis and Blue Team operations. Alongside cybersecurity, I have a solid foundation in software development, building desktop applications using C#, .NET, and SQL Server databases.';
+
+                certsHeading.innerHTML = 'My <span>Certificates</span>';
+                certsSub.textContent = 'Official certificates and specialized training courses';
+                
+                cert1Title.textContent = 'NCSC Masar Training Certificate';
+                cert1Desc.textContent = 'Certified training certificate under the Masar Cybersecurity programs, covering risk management frameworks and security practices.';
+                
+                cert2Title.textContent = 'Programming Advices Certificates';
+                cert2Desc.textContent = 'Comprehensive set of certificates in advanced programming paths including C# & OOP, ADO.NET, SQL Database, Data Structures & Algorithms.';
+                
+                certBtns.forEach(btn => {
+                    if(btn.href.includes('pdf')) btn.textContent = 'View Certificate (PDF)';
+                    else btn.textContent = 'View Certificates Folder';
+                });
+
+                contactHeading.innerHTML = 'Get In <span>Touch</span>';
+                contactSub.textContent = 'Feel free to reach out for opportunities';
+                contactDesc.textContent = 'Currently looking for internship or job opportunities in Cybersecurity (SOC Analyst) or Software Development (.NET Developer).';
+
+            } else {
+                // Switch back to Arabic
+                body.setAttribute('dir', 'ltr'); // or rtl if preferred for arabic
+                currentLang = 'ar';
+
+                navAbout.textContent = 'عنّي';
+                navCerts.textContent = 'الشهادات';
+                navContact.textContent = 'تواصل معي';
+
+                heroBadge.textContent = 'خريج أمن سيبراني • مسار محلل SOC';
+                heroTitle.innerHTML = 'محمد <span>العلا</span>';
+                heroSubtitle.textContent = 'خريج أمن سيبراني | متدرب محلل SOC';
+                heroDesc.innerHTML = 'خريج أمن سيبراني مهتم بمجال <strong>SOC Analysis</strong> والـ Blue Team. أعمل حاليًا على منصة <strong>LetsDefend</strong> وأدرس شهادة <strong>Blue Team Level 1 (BTL1)</strong>.';
+                
+                btnCerts.textContent = 'عرض الشهادات';
+                btnTouch.textContent = 'تواصل معي';
+
+                aboutHeading.innerHTML = 'نبذة <span>عنّي</span>';
+                aboutSub.textContent = 'توجهي الحالي وخلفيتي التقنية';
+                aboutBody.textContent = 'أنا خريج أمن سيبراني، لدي اهتمام خاص بمجال SOC Analysis وBlue Team. إلى جانب الأمن السيبراني، لدي أساس جيد في البرمجة وتطوير تطبيقات سطح المكتب باستخدام C# و.NET وقواعد البيانات SQL Server.';
+
+                certsHeading.innerHTML = '<span>الشهادات</span> والدورات';
+                certsSub.textContent = 'الشهادات الرسمية والدورات التدريبية المتخصصة';
+                
+                cert1Title.textContent = 'شهادة تدريب مسار - المركز الوطني للأمن السيبراني';
+                cert1Desc.textContent = 'شهادة تدريبية معتمدة في إطار برامج مسار للأمن السيبراني، تغطي أطر إدارة المخاطر والممارسات الأمنية المتقدمة.';
+                
+                cert2Title.textContent = 'شهادات Programming Advices';
+                cert2Desc.textContent = 'مجموعة متكاملة من الشهادات في مسارات البرمجة المتقدمة تشمل: C# & OOP, ADO.NET, SQL Database, Data Structures & Algorithms.';
+                
+                certBtns.forEach(btn => {
+                    if(btn.href.includes('pdf')) btn.textContent = 'عرض الشهادة (PDF)';
+                    else btn.textContent = 'عرض مجلد الشهادات';
+                });
+
+                contactHeading.innerHTML = 'تواصل <span>معي</span>';
+                contactSub.textContent = 'لا تتردد في التواصل لأي فرص عمل أو استفسارات';
+                contactDesc.textContent = 'أبحث حالياً عن فرصة تدريب أو عمل في مجال الأمن السيبراني (SOC Analyst) أو تطوير البرمجيات (.NET Developer).';
+            }
+        }
+    </script>
 </body>
 </html>
